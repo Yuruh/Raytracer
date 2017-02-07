@@ -1,0 +1,60 @@
+#test
+<VID>
+TIME: 10%
+POS: X = -50 Y = 0 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+</VID>
+
+<VID>
+TIME: 10%
+POS: X = -50 Y = 0 Z = 18
+ROTATE: X = 0 Y = 0 Z = 0
+</VID>
+
+<VID>
+TIME: 10%
+POS: X = -50 Y = -18 Z = 18
+ROTATE: X = 0 Y = 0 Z = 0
+</VID>
+
+<VID>
+TIME: 10%
+POS: X = -50 Y = -18 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+</VID>
+
+<VID>
+TIME: 10%
+POS: X = -50 Y = -18 Z = -18
+ROTATE: X = 0 Y = 0 Z = 0
+</VID>
+
+<VID>
+TIME: 10%
+POS: X = -50 Y = 0 Z = -18
+ROTATE: X = 0 Y = 0 Z = 0
+</VID>
+
+<VID>
+TIME: 10%
+POS: X = -50 Y = 18 Z = -18
+ROTATE: X = 0 Y = 0 Z = 0
+</VID>
+
+<VID>
+TIME: 10%
+POS: X = -50 Y = 18 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+</VID>
+
+<VID>
+TIME: 10%
+POS: X = -50 Y = 18 Z = 18
+ROTATE: X = 0 Y = 0 Z = 0
+</VID>
+
+<VID>
+TIME: 10%
+POS: X = -300 Y = -45 Z = 45
+ROTATE: X = 0 Y = 13 Z = 22
+</VID>

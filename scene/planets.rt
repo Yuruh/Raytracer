@@ -1,0 +1,138 @@
+#define		a_a 1
+#define		xpm 1 texture/space/mars.xpm
+#define		xpm 2 texture/space/mercure.xpm
+#define		xpm 3 texture/space/soleil.xpm
+#define		xpm 4 texture/space/earth.xpm
+#define		xpm 5 texture/space/venus.xpm
+#define		xpm 6 texture/space/jupiter.xpm
+#define		xpm 7 texture/space/saturne.xpm
+#define		xpm 8 texture/space/uranus.xpm
+#define		xpm 9 texture/space/neptune.xpm
+#define		xpm 10 texture/space/pluton.xpm
+#define		xpm 11 texture/space/SPACE.xpm
+#define		width 800
+#define		height 600
+
+<DEF>
+FORM: VIEW
+ROTATE: X = 0 Y = 0 Z = 0
+POS: X = -100 Y = 1 Z = 1
+</DEF>
+
+# NEPTUNE
+
+<DEF>
+FORM: SPHERE
+POS: X = 120 Y = 12 Z = 42
+ROTATE: X = 0 Y = 20 Z = 0
+RAYON: 6
+XPM: 9
+SPECULARITE: 100%
+</DEF>
+
+# URANUS
+
+<DEF>
+FORM: SPHERE
+POS: X = 100 Y = 3 Z = 27
+ROTATE: X = 0 Y = 30 Z = 0
+SPECULARITE: 100%
+RAYON: 6
+XPM: 8
+</DEF>
+
+# SATURNE
+
+<DEF>
+FORM: SPHERE
+POS: X = 80 Y = 3 Z = 10
+ROTATE: X = 0 Y = 30 Z = 0
+RAYON: 6
+XPM: 7
+SPECULARITE: 100%
+</DEF>
+
+# JUPITER
+
+<DEF>
+FORM: SPHERE
+POS: X = 50 Y = 10 Z = -3
+ROTATE: X = 0 Y = 30 Z = 0
+RAYON: 6
+SPECULARITE: 100%
+XPM: 6
+FOCUS: 0
+</DEF>
+
+# MARS
+
+<DEF>
+FORM: SPHERE
+POS: X = 30 Y = 17 Z = -9
+RAYON: 2
+SPECULARITE: 100%
+XPM: 1
+</DEF>
+
+# MOON
+
+<DEF>
+FORM: SPHERE
+POS: X = 16 Y = 20 Z = -16
+ROTATE: X = 0 Y = 30 Z = 0
+RAYON: 1
+XPM: 10
+</DEF>
+
+# EARTH
+
+<DEF>
+FORM: SPHERE
+POS: X = 20 Y = 24 Z = -14
+ROTATE: X = 0 Y = 20 Z = 0
+RAYON: 3
+XPM: 4
+</DEF>
+
+# VENUS
+
+<DEF>
+FORM: SPHERE
+POS: X = 17 Y = 31 Z = -19
+RAYON: 3
+XPM: 5
+</DEF>
+
+# MERCURE
+
+<DEF>
+FORM: SPHERE
+POS: X = 10 Y = 40 Z = -22
+RAYON: 1
+XPM: 2
+</DEF>
+
+# SOLEIL
+
+<DEF>
+FORM: SPHERE
+POS: X = 25 Y = 80 Z = -10
+RAYON: 25
+XPM: 3
+</DEF>
+
+
+<DEF>
+FORM: PLAN
+POS: X = 25 Y = 80 Z = 0
+ROTATE: X = 90 Y = 45 Z = 0
+XPM: 11
+LUMOS: 1
+</DEF>
+
+<DEF>
+FORM: PLAN
+POS: X = 50 Y = 0 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+XPM: 4
+</DEF>

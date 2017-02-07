@@ -1,0 +1,110 @@
+#define		a_a 1
+#define         xpm 1 texture/plasma_maze.xpm
+#define         xpm 2 texture/space/earth.xpm
+#define		xpm 3 texture/sol.xpm
+#define		xpm 4 texture/concrete.xpm
+#define		xpm 5 texture/yellow_weave.xpm
+#define		video 1 video/vid1.vid
+#define		width 1920
+#define		height 1080
+#define		time  10
+
+#sphere centrale
+<DEF>
+FORM: SPHERE
+POS: X = 0 Y = 0 Z = 0
+COLOR: 0xFFFFFF
+ROTATE: X = 0 Y = 0 Z = 0
+REFLEXION: 0%
+TRANSPARENCE: 0%
+XPM: 2
+RAYON: 20
+</DEF>
+
+<DEF>
+FORM: SPHERE
+POS: X = 0 Y = 0 Z = 0
+COLOR: 0xFFFFFF
+ROTATE: X = 0 Y = 0 Z = 0
+REFLEXION: 0%
+TRANSPARENCE: 0%
+XPM: 2
+RAYON: 20
+</DEF>
+
+# Mur devant
+<DEF>
+FORM: PLAN
+POS: X = 100 Y = 200 Z = 100
+H_LIM: X = 200 Y = 0 Z = 0
+B_LIM: X = 0 Y = -400 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+REFLEXION: 0%
+TRANSPARENCE: 0%
+XPM: 1
+</DEF>
+
+# Mur derriere
+
+# Plafond
+<DEF>
+FORM: PLAN
+POS: X = -100 Y = 200 Z = 100
+COLOR: 0xFF0000
+H_LIM: X = 200 Y = 0 Z = 0
+B_LIM: X = 0 Y = -400 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+REFLEXION: 0%
+TRANSPARENCE: 0%
+#XPM: 2
+</DEF>
+
+# Sol
+<DEF>
+FORM: PLAN
+POS: X = -100 Y = 200 Z = -100
+COLOR: 0x00FF00
+H_LIM: X = 200 Y = 0 Z = 0
+B_LIM: X = 0 Y = -400 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+REFLEXION: 0%
+TRANSPARENCE: 0%
+XPM: 3
+</DEF>
+
+# Mur gauche
+<DEF>
+FORM: PLAN
+POS: X = -100 Y = 200 Z = 100
+H_LIM: X = 200 Y = 0 Z = 0
+B_LIM: X = 0 Y = -200 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+REFLEXION: 0%
+TRANSPARENCE: 0%
+XPM: 5
+</DEF>
+
+# Mur droit
+<DEF>
+FORM: PLAN
+POS: X = -100 Y = -200 Z = 100
+H_LIM: X = 200 Y = 0 Z = 0
+B_LIM: X = 0 Y = -200 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+REFLEXION: 0%
+TRANSPARENCE: 0%
+XPM: 5
+</DEF>
+
+<DEF>
+FORM: LIGHT
+POS: X = -90 Y = 0 Z = 90
+COLOR: 0xFFFFFF
+</DEF>
+
+<DEF>
+FORM: VIEW
+ROTATE: X = 0 Y = 0 Z = 0
+POS: X = -700 Y = 0 Z = 0
+VIDEO: 1
+</DEF>

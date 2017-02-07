@@ -1,0 +1,36 @@
+#define         a_a 1
+#define         width 500
+#define         height 250
+#define		xpm 1 texture/marble.xpm
+#define         obj 1 scene/chess/pawn.obj
+#define		video 1 video/vid4.vid
+
+<DEF>
+FORM: 1
+SIZE: 1000%
+POS: X = 0 Y = 0 Z = 0
+</DEF>
+
+<DEF>
+FORM: 1
+SIZE: 1000%
+POS: X = 0 Y = 20 Z = 0
+</DEF>
+
+<DEF>
+FORM: 1
+SIZE: 1000%
+POS: X = 0 Y = -20 Z = 0
+</DEF>
+
+<DEF>
+FORM: LIGHT
+POS: X = -100 Y = 0 Z = 100
+</DEF>
+
+<DEF>
+FORM: VIEW
+ROTATE: X = 0 Y = 0 Z = 0
+POS: X = -350 Y = 0 Z = 0
+#VIDEO: 1
+</DEF>

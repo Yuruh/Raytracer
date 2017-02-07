@@ -1,0 +1,15 @@
+<VID>
+TIME: 10%
+POS: X = 7 Y = -25 Z = 10
+ROTATE: X = 0 Y = 180 Z = 0
+</VID>
+<VID>
+TIME: 2%
+POS: X = -7000 Y = -25 Z = 10
+ROTATE: X = 0 Y = 180 Z = 0
+</VID>
+<VID>
+TIME: 3%
+POS: X = 7 Y = -25 Z = 29
+ROTATE: X = 0 Y = 180 Z = 0
+</VID>

@@ -1,0 +1,629 @@
+#define         a_a 1
+#define         width 1000
+#define         height 500
+#define         xpm 6 texture/marble.xpm
+#define         xpm 2 texture/wood.xpm
+#define		xpm 3 texture/space/earth.xpm
+#define		xpm 1 texture/jungle.xpm
+#define		xpm 4 texture/sol.xpm
+#define		xpm 5 texture/rock.xpm
+#define		xpm 7 texture/wood_dark.xpm
+#define		video 1 video/eye.vid
+#define		video 2 video/tore1.vid
+#define		video 3 video/tore2.vid
+#define		video 4	video/tore3.vid
+#define		video 5 video/earth.vid
+#define		video 6 video/cube.vid
+#define		video 7 video/cyl.vid
+#define		video 8 video/cone1.vid
+#define		video 9 video/cone2.vid
+#define		video 11 video/ding1.vid
+#define		video 12 video/ellipsoid.vid
+#define		video 13 video/ellipsoid2.vid
+#define		video 14 video/star1.vid
+#define		video 15 video/star2.vid
+#define		video 16 video/star3.vid
+#define		video 17 video/star4.vid
+#define		video 18 video/hyperbo.vid
+#define		video 19 video/ding2.vid
+#define		time 20
+
+#mettre le damier en haut à droite et une lampe qui l'eclaire à gauche
+
+<DEF>
+FORM: LIGHT
+POS: X = -100 Y = 0 Z = 0
+</DEF>
+
+<DEF>
+FORM: VIEW
+POS: X = -300 Y = -45 Z = 45
+ROTATE: X = 0 Y = 13 Z = 22
+VIDEO: 1
+</DEF>
+
+<DEF>
+FORM: DINGDONG
+POS: X = 10 Y = -20 Z = 30
+ROTATE: X = 0 Y = 180 Z = 0
+B_LIM: X = -10 Y = -10 Z = 0
+SPECULARITE: 100%
+COLOR: 0xAA1234
+SIZE: 250%
+VIDEO: 11
+</DEF>
+
+<DEF>
+FORM: DINGDONG
+POS: X = 10 Y = -20 Z = 30
+ROTATE: X = 0 Y = 180 Z = 0
+B_LIM: X = -10 Y = -10 Z = 0
+SPECULARITE: 100%
+COLOR: 0xAA1234
+SIZE: 250%
+VIDEO: 19
+</DEF>
+
+<DEF>
+FORM: SPHERE
+POS: X = 15 Y = 18 Z = -1
+RAYON: 6
+XPM: 3
+SPECULARITE: 100%
+VIDEO: 5
+</DEF>
+
+<DEF>
+FORM: CUBE
+POS: X = 10 Y = 18 Z = 18
+ROTATE: X = 0 Y = 0 Z = 0
+CIRCONFERENCE: 2
+TRANSPARENCE: 100%
+REMPLISSAGE: 50%
+SPECULARITE: 100%
+COLOR: 0xFFFFFF
+VIDEO: 6
+</DEF>
+
+<DEF>
+FORM: HYPERBOLOID
+POS: X = 10 Y = -2 Z = 18
+ROTATE: X = 0 Y = 0 Z = 0
+SHEET: 1
+DISTORSION: 1 2 1
+SPECULARITE: 100%
+RAYON: 50
+H_LIM: X = 10000 Y = 10000 Z = 5
+B_LIM: X = -10000 Y = -10000 Z = -5
+</DEF>
+
+<DEF>
+FORM: HYPERBOLOID
+POS: X = 10 Y = -2 Z = 18
+ROTATE: X = 90 Y = 0 Z = 0
+SHEET: 2
+DISTORSION: 1 2 1
+SPECULARITE: 100%
+RAYON: 10
+H_LIM: X = 10000 Y = 10000 Z = 5
+B_LIM: X = -10000 Y = -10000 Z = -5
+COLOR: 0xFF0000
+VIDEO: 18
+</DEF>
+
+<DEF>
+FORM: ELLIPSOID
+POS: X = 10 Y = -1 Z = -21
+ROTATE: X = 0 Y = 0 Z = 0
+RAYON: 2
+SHEET: 1
+DISTORSION: 3 3 1
+SPECULARITE: 100%
+COLOR: 0xF0F0F0
+VIDEO: 12
+</DEF>
+
+<DEF>
+FORM: ELLIPSOID
+POS: X = 10 Y = -1 Z = -21
+ROTATE: X = 90 Y = 0 Z = 0
+RAYON: 2
+SPECULARITE: 100%
+SHEET: 1
+DISTORSION: 3 3 1
+COLOR: 0xFF0000
+VIDEO: 13
+</DEF>
+
+<DEF>
+FORM: PARABOLOID
+POS: X = 10 Y = -20 Z = -30
+ROTATE: X = 0 Y = 0 Z = 0
+H_LIM: X = 5 Y = 5 Z = 9
+B_LIM: X = -5 Y = -5 Z = -9
+DISTORSION: 1 1 1
+RAYON: 100
+COLOR: 0x999999
+SPECULARITE: 100%
+</DEF>
+
+<DEF>
+FORM: STAR
+POS: X = 10 Y = 18 Z = -21
+ROTATE: X = 0 Y = 0 Z = 0
+SPECULARITE: 100%
+COLOR: 0x006600
+TRANSPARENCE: 50%
+VIDEO: 14
+H_LIM: X = 10000 Y = 10 Z = 9
+B_LIM: X = -10000 Y = -10 Z = -9
+</DEF>
+<DEF>
+FORM: STAR
+POS: X = 10 Y = 18 Z = -21
+ROTATE: X = 22 Y = 0 Z = 0
+SPECULARITE: 100%
+COLOR: 0x000066
+VIDEO: 15
+TRANSPARENCE: 50%
+H_LIM: X = 10000 Y = 10 Z = 9
+B_LIM: X = -10000 Y = -10 Z = -9
+</DEF>
+
+<DEF>
+FORM: STAR
+POS: X = 10 Y = 18 Z = -21
+ROTATE: X = 45 Y = 0 Z = 0
+SPECULARITE: 100%
+COLOR: 0x00EE00
+TRANSPARENCE: 50%
+VIDEO: 16
+H_LIM: X = 10000 Y = 10 Z = 9
+B_LIM: X = -10000 Y = -10 Z = -9
+</DEF>
+<DEF>
+FORM: STAR
+POS: X = 10 Y = 18 Z = -21
+ROTATE: X = 67 Y = 0 Z = 0
+SPECULARITE: 100%
+COLOR: 0x0000EE
+TRANSPARENCE: 50%
+VIDEO: 17
+H_LIM: X = 10000 Y = 10 Z = 9
+B_LIM: X = -10000 Y = -10 Z = -9
+</DEF>
+
+<DEF>
+FORM: TORE
+POS: X = 10 Y = -2 Z = -2
+ROTATE: X = 30 Y = 120 Z = 30
+CIRCONFERENCE: 7
+RAYON: 1
+SPECULARITE: 100%
+COLOR: 0xFF0000
+VIDEO: 2
+</DEF>
+
+<DEF>
+FORM: TORE
+POS: X = 10 Y = -2 Z = -2
+ROTATE: X = 30 Y = 30 Z = 120
+CIRCONFERENCE: 5
+SPECULARITE: 100%
+RAYON: 1
+VIDEO: 3
+COLOR: 0xFFFFFF
+</DEF>
+
+<DEF>
+FORM: TORE
+POS: X = 10 Y = -2 Z = -2
+ROTATE: X = 120 Y = 30 Z = 30
+CIRCONFERENCE: 3
+RAYON: 1
+SPECULARITE: 100%
+COLOR: 0xFF0000
+VIDEO: 4
+</DEF>
+
+
+#plan sang
+<DEF>
+FORM: PLAN
+POS: X = 0 Y = -29 Z = 27
+H_LIM: X = 0 Y = 18 Z = 0
+B_LIM: X = 20 Y = 0 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+COLOR: 0xFF0000
+</DEF>
+
+#mur du fond
+<DEF>
+FORM: PLAN
+POS: X = 30 Y = -50 Z = 50
+H_LIM: X = 0 Y = 100 Z = 0
+B_LIM: X = 80 Y = 0 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+COLOR: 0xFFFFFF
+XPM: 7
+FOCUS: 1
+</DEF>
+
+<DEF>
+FORM: PLAN
+POS: X = 20 Y = -30 Z = 30
+H_LIM: X = 0 Y = 60 Z = 0
+B_LIM: X = 60 Y = 0 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+COLOR: 0xFFFFFF
+XPM: 2
+</DEF>
+
+#sol
+<DEF>
+FORM: PLAN
+POS: X = -250 Y = -50 Z = -30
+H_LIM: X = 0 Y = 100 Z = 0
+B_LIM: X = 300 Y = 0 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+COLOR: 0xFFFFFF
+XPM: 4
+REFLEXION: 60%
+</DEF>
+
+#plafond
+<DEF>
+FORM: PLAN
+POS: X = -250 Y = -50 Z = 50
+H_LIM: X = 0 Y = 100 Z = 0
+B_LIM: X = 300 Y = 0 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+COLOR: 0x555555
+XPM: 4
+</DEF>
+
+#mur droit
+<DEF>
+FORM: PLAN
+POS: X = -250 Y = -50 Z = -30
+H_LIM: X = 0 Y = 80 Z = 0
+B_LIM: X = 300 Y = 0 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+COLOR: 0xFFFFFF
+XPM: 5
+FOCUS: 1
+</DEF>
+
+#mur gauche
+<DEF>
+FORM: PLAN
+POS: X = -250 Y = 50 Z = -30
+H_LIM: X = 0 Y = 80 Z = 0
+B_LIM: X = 300 Y = 0 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+COLOR: 0xFFFFFF
+XPM: 5
+FOCUS: 1
+</DEF>
+
+#début planche
+#plan horizontal
+<DEF>
+FORM: PLAN
+POS: X = 0 Y = -30 Z = 30
+H_LIM: X = 0 Y = 60 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+COLOR: 0xFF0000
+XPM: 2
+</DEF>
+#plan horizontal
+<DEF>
+FORM: PLAN
+POS: X = 0 Y = -30 Z = 27
+H_LIM: X = 0 Y = 60 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+COLOR: 0xFF0000
+XPM: 2
+</DEF>
+#plan vertical
+<DEF>
+FORM: PLAN
+POS: X = 0 Y = -30 Z = 30
+H_LIM: X = 0 Y = 60 Z = 0
+B_LIM: X = 3 Y = 0 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+COLOR: 0xFFFF00
+XPM: 2
+</DEF>
+#plan latéral
+<DEF>
+FORM: PLAN
+POS: X = 0 Y = -30 Z = 27
+H_LIM: X = 0 Y = 3 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+COLOR: 0xFF00FF
+XPM: 2
+</DEF>
+#plan latéral
+<DEF>
+FORM: PLAN
+POS: X = 0 Y = 30 Z = 27
+H_LIM: X = 0 Y = 3 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+COLOR: 0xFF00FF
+XPM: 2
+</DEF>
+#fin planche
+
+#début planche
+#plan horizontal
+<DEF>
+FORM: PLAN
+POS: X = 0 Y = -10 Z = 10
+H_LIM: X = 0 Y = 40 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+COLOR: 0xFF0000
+XPM: 2
+</DEF>
+#plan horizontal
+<DEF>
+FORM: PLAN
+POS: X = 0 Y = -10 Z = 7
+H_LIM: X = 0 Y = 40 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+COLOR: 0xFF0000
+XPM: 2
+</DEF>
+#plan vertical
+<DEF>
+FORM: PLAN
+POS: X = 0 Y = -10 Z = 10
+H_LIM: X = 0 Y = 40 Z = 0
+B_LIM: X = 3 Y = 0 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+COLOR: 0xFFFF00
+XPM: 2
+</DEF>
+#plan latéral
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = -10 Z = 7
+H_LIM: X = 0 Y = 3 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+COLOR: 0xFF00FF
+</DEF>
+#plan latéral
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = 10 Z = 7
+H_LIM: X = 0 Y = 3 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+COLOR: 0xFF00FF
+</DEF>
+#fin planche
+
+#début planche
+#plan horizontal
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = -10 Z = -10
+H_LIM: X = 0 Y = 40 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+COLOR: 0xFF0000
+</DEF>
+#plan horizontal
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = -10 Z = -13
+H_LIM: X = 0 Y = 40 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+COLOR: 0xFF0000
+</DEF>
+#plan vertical
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = -10 Z = -10
+H_LIM: X = 0 Y = 40 Z = 0
+B_LIM: X = 3 Y = 0 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+COLOR: 0xFFFF00
+</DEF>
+#plan latéral
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = -10 Z = -13
+H_LIM: X = 0 Y = 3 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+COLOR: 0xFF00FF
+</DEF>
+#plan latéral
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = 10 Z = -13
+H_LIM: X = 0 Y = 3 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+COLOR: 0xFF00FF
+</DEF>
+#fin planche
+
+#début planche
+#plan horizontal
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = -30 Z = -27
+H_LIM: X = 0 Y = 60 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+COLOR: 0xFF0000
+</DEF>
+#plan horizontal
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = -30 Z = -30
+H_LIM: X = 0 Y = 60 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+COLOR: 0xFF0000
+</DEF>
+#plan vertical
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = -30 Z = -27
+H_LIM: X = 0 Y = 60 Z = 0
+B_LIM: X = 3 Y = 0 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+COLOR: 0xFFFF00
+</DEF>
+#plan latéral
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = -30 Z = -30
+H_LIM: X = 0 Y = 3 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+COLOR: 0xFF00FF
+</DEF>
+#plan latéral
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = 30 Z = -30
+H_LIM: X = 0 Y = 3 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+COLOR: 0xFF00FF
+</DEF>
+#fin planche
+
+#plan tout à gauche
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = 30 Z = -30
+H_LIM: X = 0 Y = 60 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+</DEF>
+
+#plan tout à droite
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = -30 Z = -30
+H_LIM: X = 0 Y = 60 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+</DEF>
+
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = -10 Z = -30
+H_LIM: X = 0 Y = 60 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+</DEF>
+
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = -13 Z = -30
+H_LIM: X = 0 Y = 60 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+</DEF>
+
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = 10 Z = -30
+H_LIM: X = 0 Y = 60 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+</DEF>
+
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = 7 Z = -30
+H_LIM: X = 0 Y = 60 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+</DEF>
+
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = -27 Z = -30
+H_LIM: X = 0 Y = 60 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+</DEF>
+
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = 27 Z = -30
+H_LIM: X = 0 Y = 60 Z = 0
+B_LIM: X = 30 Y = 0 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+</DEF>
+
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = 7 Z = 30
+H_LIM: X = 0 Y = 3 Z = 0
+B_LIM: X = 60 Y = 0 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+</DEF>
+
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = -13 Z = 30
+H_LIM: X = 0 Y = 3 Z = 0
+B_LIM: X = 60 Y = 0 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+</DEF>
+
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = -30 Z = 30
+H_LIM: X = 0 Y = 3 Z = 0
+B_LIM: X = 60 Y = 0 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+</DEF>
+
+<DEF>
+XPM: 2
+FORM: PLAN
+POS: X = 0 Y = 27 Z = 30
+H_LIM: X = 0 Y = 3 Z = 0
+B_LIM: X = 60 Y = 0 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+</DEF>

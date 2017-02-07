@@ -1,0 +1,25 @@
+1  -> Fichier de config
+2  -> Multi_thread
+3  -> Lumière d'ambiance
+4  -> Objets Limités
+5  -> Réflexion
+6  -> Transparence avec réfraction
+7  -> Chargement de modèles 3D (OBJ)
+8  -> Textures sur plan / sphère
+9  -> Export BMP
+10 -> Vidéo avec mouvement de l'oeil et des objets
+11 -> Anti-aliasing
+12 -> Textures procédurales (Damier)
+13 -> Lumiere parallele avec plan lumineux
+14 -> Boxing
+15 -> Blur (Gestion du focus)
+16 -> Phong
+17 -> Ellipsoid
+18 -> Paraboloid
+19 -> Hyperboloid
+20 -> Tore
+21 -> Cube (Troue)
+22 -> My ding ding dong
+23 -> Interstellar
+24 -> Baleine de Mobius
+25 -> Cluster

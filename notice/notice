@@ -1,0 +1,57 @@
++-------------------------------------------------------------------------------+
+|		       ~ HOW TO FILL THE CONFIG FILE ~			        |
+|									        |
+|           Your declarations have to be between <DEF> and </DEF>	        |
+|              A point of view and only one has to be set		        |
+|									        |
+| The different settings are:						        |
+| FORM: You can choose: SPHERE / PLAN / VIEW / CYLINDRE / CONE / LIGHT / ID_OBJ |
+|                       PARABOLOID / HYPERBOLOID / ELLIPSOID / TORE / DINGDONG  |
+|			CUBE / STAR / MOBIUS					|
+| POS: X = / Y= / Z = / Position in the space. 		      		        |
+| ROTATE: X = / Y = / Z = / Rotation in the space.			        |
+| H_LIM: X = / Y = / Z = / Limit on the top of the object.		        |
+| B_LIM: X = / Y = / Z = / Limit on the bot of the object.		        |
+| RAYON: The rayon of the object.   	    				        |
+| ANGLE: The angle of the cone (in degrees).				        |
+| BRILLANCE: The brillance of the object (in percent).			        |
+| TRANSPARENCE: The transparence of the object (in percent).		        |
+| REFLEXION: The reflexion of the object (in percent).			        |
+| COLOR: A value in hexadecimal.  	     				        |
+| SPECULARITE: Percentage of Phong effect on an object.				|
+| REMPLISSAGE: Percentage of the size of the cube's hole.			|
+| SHEET: Number of sheet of hyperboloid.					|
+| DAMIER: Put value in hexadecimal if you want to show damier.		        |
+| FOCUS: 0 -> There is no focus on the object. 	       			        |
+| LUMOS: 1 -> Change a plan to a lumos plan.					|
+| SIZE: 100% is the default size of the obj. It can be increased or decreased.  |
+| DISTORSION: Dist_1 / Dist_2 / Dist_3 / -OID obj and Möbius  -100 <= X <= 100  |
+| XPM: ID_XPM_DEFINED. Only for the sphere.					|
+| VIDEO: ID_VIDEO_DEFINED. Apply a movement defined in .vid file.		|
+| CIRCONFERENCE: The rayon of the tore's hole.					|
++-------------------------------------------------------------------------------+
+|                         ~ HOW TO DECLARE DEFINES ~			        |
+|									        |
+|      You can declare defines where you want except in the <DEF></DEF>	        |
+|   DECLARATION : #define     SETTING	      VALUE  	    [PATH]	        |
+|   		  	      		      		    		        |
+| You can parameter with defines:					        |
+| Antialiasing->  #define      a_a          1 / 2 / 4	     NULL	        |
+|    Width    ->  #define     width            > 0           NULL 	        |
+|    Height   ->  #define     height           > 0           NULL               |
+|    Object   ->  #define      obj      > 0 (UNIQUE ID)   path ("scene/.obj")   |
+|     XPM     ->  #define      xpm      > 0 (UNIQUE ID)   path ("texture/.xpm") |
+|    Video    ->  #define     video     > 0 (UNIQUE ID)   path ("scene/.vid")   |
++-------------------------------------------------------------------------------+
+|			~ HOW TO FILL THE VIDEO FILE ~				|
+|										|
+|           Your declarations have to be between <VID> and </VID>	        |
+|          A translation and a rotation has to be set in each one.	        |
+|										|
+| The different settings are:							|
+| POS: X = / Y = / Z = / Final position of the object (translation).		|
+| ROTATE: X = / Y = / Z = / Final position of the object (rotation).		|
+| ROT_CENT:    X = Y = Z =               /                    X = Y = Z =	|
+|	          ^^^                    ^                       ^^^		|
+|        Position central point     (Separater)           Angle of rotation	|
++-------------------------------------------------------------------------------+

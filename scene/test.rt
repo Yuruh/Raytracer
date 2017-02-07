@@ -1,0 +1,8 @@
+#define		obj 2 Glass.obj
+#define		height 500
+#define		width 500
+
+<DEF>
+FORM:
+POS: X = 0 Y = 0 Z = 0
+</DEF>

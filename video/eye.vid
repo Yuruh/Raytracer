@@ -1,0 +1,76 @@
+<VID>
+TIME: 2%
+POS: X = -210 Y = 40 Z = 0
+ROTATE: X = 0 Y = -2 Z = -18
+</VID>
+<VID>
+TIME: 13%
+POS: X = -200 Y = 45 Z = -2
+ROTATE: X = 0 Y = -3 Z = -22
+</VID>
+
+<VID>
+TIME: 2%
+POS: X = -130 Y = 48 Z = 8
+ROTATE: X = 35 Y = -9 Z = -22
+</VID>
+<VID>
+TIME: 13%
+POS: X = -120 Y = 49 Z = 10
+ROTATE: X = 40 Y = -10 Z = -22
+</VID>
+
+<VID>
+TIME: 2%
+POS: X = -120 Y = -49 Z = 10
+ROTATE: X = -35 Y = -10 Z = 22
+</VID>
+<VID>
+TIME: 13%
+POS: X = -120 Y = -49 Z = 10
+ROTATE: X = -40 Y = -10 Z = 22
+</VID>
+
+<VID>
+TIME: 2%
+POS: X = -65 Y = 10 Z = 14
+ROTATE: X = 0 Y = 0 Z = 0
+</VID>
+<VID>
+TIME: 8%
+POS: X = -60 Y = 15 Z = 15
+ROTATE: X = 0 Y = 0 Z = 0
+</VID>
+
+<VID>
+TIME: 2%
+POS: X = -100 Y = -19 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+</VID>
+<VID>
+TIME: 18%
+POS: X = -110 Y = -20 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+</VID>
+
+<VID>
+TIME: 2%
+POS: X = -63 Y = 13 Z = -13
+ROTATE: X = 0 Y = 0 Z = 0
+</VID>
+<VID>
+TIME: 8%
+POS: X = -60 Y = 15 Z = -15
+ROTATE: X = 0 Y = 0 Z = 0
+</VID>
+
+<VID>
+TIME: 2%
+POS: X = -290 Y = -40 Z = 40
+ROTATE: X = 0 Y = 10 Z = 18
+</VID>
+<VID>
+TIME: 13%
+POS: X = -300 Y = -45 Z = 45
+ROTATE: X = 0 Y = 13 Z = 22
+</VID>

@@ -1,0 +1,66 @@
+#define		a_a 2
+#define		xpm 1 texture/space/mars.xpm
+#define		xpm 2 texture/space/mercure.xpm
+#define		xpm 3 texture/space/soleil.xpm
+#define		xpm 4 texture/space/earth.xpm
+#define		xpm 5 texture/space/venus.xpm
+#define		xpm 6 texture/plasma_maze.xpm
+
+<DEF>
+FORM: LIGHT
+POS: X = -50 Y = 0 Z = 0
+COLOR: 0xFFFFFF
+</DEF>
+
+<DEF>
+FORM: VIEW
+ROTATE: X = 0 Y = 0 Z = 0
+POS: X = -100 Y = 1 Z = 1
+</DEF>
+
+<DEF>
+FORM: PLAN
+POS: X = 300 Y = -200 Z = 200
+H_LIM: X = 0 Y = 400 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+B_LIM: X = 400 Y = 0 Z = 0
+XPM: 6
+FOCUS: 1
+</DEF>
+
+<DEF>
+FORM: SPHERE
+POS: X = 0 Y = 20 Z = 0
+ROTATE: X = 0 Y = 0 Z = 140
+RAYON: 3
+XPM: 4
+</DEF>
+
+<DEF>
+FORM: SPHERE
+POS: X = 0 Y = 14 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+RAYON: 3
+XPM: 1
+</DEF>
+
+<DEF>
+FORM: SPHERE
+POS: X = 0 Y = 28 Z = 0
+RAYON: 3
+XPM: 5
+</DEF>
+
+<DEF>
+FORM: SPHERE
+POS: X = 0 Y = 35 Z = 0
+RAYON: 3
+XPM: 2
+</DEF>
+
+<DEF>
+FORM: SPHERE
+POS: X = 0 Y = 43 Z = 0
+RAYON: 3
+XPM: 3
+</DEF>

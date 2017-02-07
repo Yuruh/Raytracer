@@ -1,0 +1,22 @@
+#define         a_a 1
+#define		obj 2 coin.obj
+
+<DEF>
+FORM: VIEW
+POS: X = -50 Y = 0 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+</DEF>
+
+<DEF>
+FORM: LIGHT
+POS: X = -125 Y = 25 Z = 55
+COLOR: 0xFF0000
+</DEF>
+
+<DEF>
+FORM: 2
+POS: X = 100 Y = 0 Z = 0
+ROTATE: X = 45 Y = 45 Z = 45
+SIZE: 1000%
+COLOR: 0x000000
+</DEF>

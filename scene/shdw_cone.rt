@@ -1,0 +1,32 @@
+#define         a_a 1
+#define         width 1000
+#define         height 500
+
+<DEF>
+FORM: LIGHT
+POS: X = -15 Y = 20 Z = 0
+COLOR: 0xFF0000
+</DEF>
+
+<DEF>
+FORM: VIEW
+ROTATE: X = 0 Y = 0 Z = 0
+POS: X = -150 Y = 0 Z = 0
+</DEF>
+
+<DEF>
+FORM: PLAN
+POS: X = 100 Y = 0 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+</DEF>
+
+<DEF>
+FORM: CONE
+POS: X = 0 Y = 0 Z = 1
+DISTORSION: 1 100 10
+H_LIM: X = 1000 Y = 1000 Z = 10
+B_LIM: X = -1000 Y = -1000 Z = -10
+SPECULARITE: 100%
+BRILLANCE: 50%
+#COLOR: 0xFF0000
+</DEF>

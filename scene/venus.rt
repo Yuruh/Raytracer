@@ -1,0 +1,30 @@
+#define         a_a 1
+#define         obj 2 scene/venusm.obj
+#define		height 1080
+#define		width 500
+
+<DEF>
+FORM: VIEW
+ROTATE: X = 0 Y = 0 Z = 0
+POS: X = -100 Y = 50 Z = 60
+</DEF>
+
+<DEF>
+FORM: LIGHT
+POS: X = 125 Y = 25 Z = 55
+COLOR: 0xFF0000
+</DEF>
+
+#<DEF>
+#FORM: PLAN
+#POS: X = 200 Y = 0 Z = 0
+#ROTATE: X = 0 Y = 45 Z = 0
+#COLOR: 0x0000FF
+#</DEF>
+
+<DEF>
+FORM: 2
+POS: X = 140 Y = 30 Z = -20
+ROTATE: X = 90 Y = 10 Z = 0
+SIZE: 6%
+</DEF>

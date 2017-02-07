@@ -1,0 +1,64 @@
+#define		a_a 1
+#define         xpm 1 texture/plasma_maze.xpm
+#define         xpm 2 texture/space/earth.xpm
+#define		xpm 3 texture/space/pluton.xpm
+#define		xpm 4 texture/concrete.xpm
+#define		xpm 5 texture/yellow_weave.xpm
+#define		video 1 video/vid2.vid
+#define		width 600
+#define		height 300
+#define		time 5
+
+<DEF>
+FORM: PLAN
+POS: X = -25 Y = -25 Z = -20
+COLOR: 0xFFFFFF
+TRANSPARENCE: 0%
+XPM: 5
+</DEF>
+
+#sphere centrale
+<DEF>
+FORM: SPHERE
+POS: X = 0 Y = -10 Z = -10
+COLOR: 0xFFFFFF
+ROTATE: X = 0 Y = 0 Z = 0
+XPM: 2
+RAYON: 3
+TRANSPARENCE: 0%
+SPECULARITE: 100%
+</DEF>
+
+<DEF>
+FORM: SPHERE
+POS: X = 0 Y = 10 Z = -10
+COLOR: 0xFFFFFF
+ROTATE: X = 0 Y = 0 Z = 0
+XPM: 1
+RAYON: 3
+TRANSPARENCE: 0%
+SPECULARITE: 100%
+</DEF>
+
+<DEF>
+FORM: SPHERE
+POS: X = 0 Y = 0 Z = 10
+COLOR: 0xFFFFFF
+ROTATE: X = 0 Y = 0 Z = 0
+XPM: 3
+RAYON: 3
+TRANSPARENCE: 0%
+SPECULARITE: 100%
+</DEF>
+
+<DEF>
+FORM: LIGHT
+POS: X = 0 Y = 0 Z = 90
+COLOR: 0xFFFFFF
+</DEF>
+
+<DEF>
+FORM: VIEW
+ROTATE: X = 0 Y = 0 Z = 0
+POS: X = -100 Y = 0 Z = 0
+</DEF>

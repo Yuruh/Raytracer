@@ -1,0 +1,23 @@
+#define		a_a 1
+#define		obj 0 scene/stanford.obj
+#define		width 200
+#define		height 100
+
+<DEF>
+FORM: 0
+POS: X = 0 Y = 0 Z = 0
+COLOR: 0xFFFFFF
+SIZE: 10000%
+</DEF>
+
+<DEF>
+FORM: LIGHT
+POS: X = -35 Y = 0 Z = 0
+COLOR: 0xFFFFFF
+</DEF>
+
+<DEF>
+FORM: VIEW
+ROTATE: X = 0 Y = 0 Z = 0
+POS: X = -100 Y = 0 Z = 0
+</DEF>

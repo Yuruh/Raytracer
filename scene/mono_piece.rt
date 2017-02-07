@@ -1,0 +1,159 @@
+#define		a_a 1
+#define		obj 2 scene/jack.obj
+#define         xpm 1 texture/wallpaper.xpm
+#define         xpm 2 texture/sol.xpm
+#define		width 400
+#define		height 200
+
+<DEF>
+FOCUS: 1
+FORM: 2
+SPECULARITE: 100%
+TRANSPARENCE: 0%
+POS: X = 0 Y = 0 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+COLOR: 0xFFFFFF
+SIZE: 100%
+</DEF>
+
+#damier
+
+<DEF>
+FORM: PLAN
+POS: X = -200 Y = -200 Z = 0
+H_LIM: X = 0 Y = 400 Z = 0
+B_LIM: X = 400 Y = 0 Z = 0
+BRILLANCE: 0%
+REFLEXION: 0%
+DAMIER: 0xFFFFFF
+COLOR: 0x000000
+FOCUS: 1
+</DEF>
+
+
+#dessous damier
+
+<DEF>
+FORM: PLAN
+POS: X = -200 Y = -200 Z = -10
+H_LIM: X = 0 Y = 400 Z = 0
+B_LIM: X = 400 Y = 0 Z = 0
+BRILLANCE: 0%
+REFLEXION: 0%
+COLOR: 0x000000
+FOCUS: 0
+</DEF>
+
+#4 faces latérales
+<DEF>
+FORM: PLAN
+POS: X = -200 Y = -200 Z = 0
+H_LIM: X = 0 Y = 400 Z = 0
+B_LIM: X = 10 Y = 0 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+BRILLANCE: 0%
+COLOR: 0x000000
+</DEF>
+<DEF>
+FORM: PLAN
+POS: X = 200 Y = -200 Z = 0
+H_LIM: X = 0 Y = 400 Z = 0
+B_LIM: X = 10 Y = 0 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+BRILLANCE: 1%
+COLOR: 0x000000
+FOCUS: 1
+</DEF>
+<DEF>
+FORM: PLAN
+POS: X = -200 Y = -200 Z = 0
+H_LIM: X = 0 Y  = 10 Z = 0
+B_LIM: X = 400 Y = 0 Z = 0
+ROTATE: X = -90 Y = 0 Z = 0
+BRILLANCE: 1%
+COLOR: 0x000000
+FOCUS: 1
+</DEF>
+<DEF>
+FORM: PLAN
+POS: X = -200 Y = 200 Z = 0
+H_LIM: X = 0 Y  = 10 Z = 0
+B_LIM: X = 400 Y = 0 Z = 0
+ROTATE: X = -90 Y = 0 Z = 0
+BRILLANCE: 1%
+COLOR: 0x000000
+FOCUS: 1
+</DEF>
+
+
+
+
+<DEF>
+FORM: PLAN
+POS: X = -500 Y = 500 Z = -100
+COLOR: 0xCCCCCC
+H_LIM: X = 1000 Y = 0 Z = 0
+B_LIM: X = 0 Y = -1000 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+REFLEXION: 0%
+TRANSPARENCE: 0%
+#FOCUS: 0
+XPM: 2
+</DEF>
+
+<DEF>
+FORM: PLAN
+POS: X = -500 Y = 500 Z = 300
+COLOR: 0xCCCCCC
+H_LIM: X = 1000 Y = 0 Z = 0
+B_LIM: X = 0 Y = -1000 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+#FOCUS: 0
+XPM: 1
+REFLEXION: 0%
+</DEF>
+<DEF>
+FORM: PLAN
+POS: X = -500 Y = 500 Z = 300
+COLOR: 0xCCCCCC
+H_LIM: X = 1000 Y = 0 Z = 0
+B_LIM: X = 0 Y = -1000 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+#FOCUS: 0
+XPM: 1
+REFLEXION: 0%
+</DEF>
+<DEF>
+FORM: PLAN
+POS: X = -500 Y = -500 Z = 300
+COLOR: 0xCCCCCC
+FOCUS: 0
+H_LIM: X = 1000 Y = 0 Z = 0
+B_LIM: X = 0 Y = -1000 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+REFLEXION: 0%
+</DEF>
+
+<DEF>
+FORM: PLAN
+POS: X = 500 Y = 500 Z = 500
+COLOR: 0xCCCCCC
+#FOCUS: 0
+H_LIM: X = 1000 Y = 0 Z = 0
+B_LIM: X = 0 Y = -1000 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+REFLEXION: 0%
+XPM: 1
+</DEF>
+
+<DEF>
+FORM: LIGHT
+POS: X = -250 Y = 0 Z = 100
+COLOR: 0xFFFFFF
+</DEF>
+
+<DEF>
+FORM: VIEW
+ROTATE: X = 0 Y = 0 Z = 0
+POS: X = -100 Y = 0 Z = 10
+</DEF>

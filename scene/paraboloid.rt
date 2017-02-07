@@ -1,0 +1,33 @@
+#define         a_a 1
+#define         width 300
+#define         height 150
+#define         video 1 video/eye.vid
+#define         video 14 video/star1.vid
+#define         video 15 video/star2.vid
+#define         video 16 video/star3.vid
+#define         video 17 video/star4.vid
+#define		time 20
+
+<DEF>
+FORM: LIGHT
+POS: X = -100 Y = 0 Z = 0
+</DEF>
+
+<DEF>
+FORM: VIEW
+POS: X = -50 Y = 20 Z = -20
+ROTATE: X = 0 Y = 0 Z = 0
+VIDEO: 1
+</DEF>
+
+<DEF>
+FORM: PARABOLOID
+POS: X = 10 Y = -20 Z = -30
+ROTATE: X = 0 Y = 0 Z = 0
+H_LIM: X = 5 Y = 5 Z = 9
+B_LIM: X = -5 Y = -5 Z = -9
+DISTORSION: 1 1 1
+RAYON: 100
+COLOR: 0x999999
+SPECULARITE: 100%
+</DEF>

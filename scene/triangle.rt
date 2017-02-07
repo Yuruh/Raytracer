@@ -1,0 +1,30 @@
+#define         a_a 1
+#define		obj 0 scene/poisson.obj
+
+
+<DEF>
+FORM: 0
+POS: X = 120 Y = 30 Z = 30
+ROTATE: X = 0 Y = 0 Z = 0
+COLOR: 0x00FFFF
+REFLEXION: 0%
+SIZE: 1000%
+</DEF>
+
+<DEF>
+FORM: SPHERE
+POS: X = 0 Y = 0 Z = 0
+RAYON: 2
+</DEF>
+
+
+<DEF>
+FORM: LIGHT
+POS: X = -100 Y = 0 Z = 0
+COLOR: 0xFF0000
+</DEF>
+
+<DEF>
+FORM: VIEW
+POS: X = -500 Y = 0 Z = 0
+</DEF>

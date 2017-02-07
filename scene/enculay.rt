@@ -1,0 +1,52 @@
+#define         a_a 2
+##define         obj 0  scene/cube.obj
+#define		width 500
+#define		height 250
+
+<DEF>
+FORM: CYLINDRE
+POS: X = 200 Y = 100 Z = 0
+H_LIM: X = 10000 Y = 10000 Z = 100
+B_LIM: X = -10000 Y = -10000 Z = -100
+ROTATE: X = 0 Y = 0 Z = 0
+BRILLANCE: 0%
+RAYON: 10
+COLOR: 0xFF0000
+TRANSPARENCE: 0%
+</DEF>
+
+<DEF>
+FORM: CYLINDRE
+POS: X = 200 Y = 0 Z = 0
+H_LIM: X = 10000 Y = 10000 Z = 100
+B_LIM: X = -10000 Y = -10000 Z = -100
+ROTATE: X = 0 Y = 0 Z = 0
+BRILLANCE: 0%
+RAYON: 10
+COLOR: 0x0000FF
+TRANSPARENCE: 0%
+</DEF>
+
+<DEF>
+FORM: CYLINDRE
+POS: X = 200 Y = -100 Z = 0
+H_LIM: X = 10000 Y = 10000 Z = 100
+B_LIM: X = -10000 Y = -10000 Z = -100
+ROTATE: X = 0 Y = 0 Z = 0
+BRILLANCE: 0%
+TRANSPARENCE: 0%
+RAYON: 10
+COLOR: 0x0000FF
+</DEF>
+
+<DEF>
+FORM: LIGHT
+POS: X = -300 Y = 10000 Z = 0
+COLOR: 0xFFFFFF
+</DEF>
+
+<DEF>
+FORM: VIEW
+ROTATE: X = 0 Y = 0 Z = 0
+POS: X = -300 Y = 0 Z = 0
+</DEF>

@@ -1,0 +1,102 @@
+#define		a_a 1
+#define		obj 0 scene/chess/rook.obj
+#define		obj 1 scene/table.obj
+#define		width 1000
+#define		height 500
+
+#damier
+
+<DEF>
+FORM: PLAN
+POS: X = -200 Y = -200 Z = 0
+H_LIM: X = 0 Y = 400 Z = 0
+B_LIM: X = 400 Y = 0 Z = 0
+BRILLANCE: 0%
+REFLEXION: 0%
+DAMIER: 0xFFFFFF
+COLOR: 0x000000
+FOCUS: 1
+</DEF>
+
+
+<DEF>
+FORM: 0
+POS: X = 0 Y = 0 Z = 0
+COLOR: 0xFFFFFF
+SIZE: 10000%
+</DEF>
+
+<DEF>
+FORM: 1
+POS: X = 0 Y = 0 Z = 0
+COLOR: 0xFFFFFF
+</DEF>
+
+#dessus/dessous damier
+
+<DEF>
+FORM: PLAN
+POS: X = -200 Y = -200 Z = -10
+H_LIM: X = 0 Y = 400 Z = 0
+B_LIM: X = 400 Y = 0 Z = 0
+BRILLANCE: 0%
+REFLEXION: 0%
+COLOR: 0x0000FF
+FOCUS: 1
+</DEF>
+
+#4 faces latérales
+<DEF>
+FORM: PLAN
+POS: X = -200 Y = -200 Z = 0
+H_LIM: X = 0 Y = 400 Z = 0
+B_LIM: X = 10 Y = 0 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+BRILLANCE: 0%
+COLOR: 0x0000FF
+</DEF>
+
+<DEF>
+FORM: PLAN
+POS: X = 200 Y = -200 Z = 0
+H_LIM: X = 0 Y = 400 Z = 0
+B_LIM: X = 10 Y = 0 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+BRILLANCE: 1%
+COLOR: 0x0000FF
+FOCUS: 1
+</DEF>
+
+<DEF>
+FORM: PLAN
+POS: X = -200 Y = -200 Z = 0
+H_LIM: X = 0 Y  = 10 Z = 0
+B_LIM: X = 400 Y = 0 Z = 0
+ROTATE: X = -90 Y = 0 Z = 0
+BRILLANCE: 1%
+COLOR: 0x0000FF
+FOCUS: 1
+</DEF>
+
+<DEF>
+FORM: PLAN
+POS: X = -200 Y = 200 Z = 0
+H_LIM: X = 0 Y  = 10 Z = 0
+B_LIM: X = 400 Y = 0 Z = 0
+ROTATE: X = -90 Y = 0 Z = 0
+BRILLANCE: 1%
+COLOR: 0x0000FF
+FOCUS: 1
+</DEF>
+
+<DEF>
+FORM: LIGHT
+POS: X = 0 Y = 100 Z = 100
+COLOR: 0xFFFFFF
+</DEF>
+
+<DEF>
+FORM: VIEW
+ROTATE: X = 0 Y = 0 Z = 0
+POS: X = -2000 Y = -250 Z = 250
+</DEF>

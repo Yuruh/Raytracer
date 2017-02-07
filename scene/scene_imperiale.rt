@@ -1,0 +1,155 @@
+#define		a_a 1
+#define         xpm 1 texture/plasma_maze.xpm
+#define         xpm 2 texture/space/earth.xpm
+#define		xpm 3 texture/sol.xpm
+#define		xpm 4 texture/concrete.xpm
+#define		xpm 5 texture/yellow_weave.xpm
+#define		obj 1 scene/venusm.obj
+#define		width 800
+#define		height 400
+
+
+#venus
+<DEF>
+FORM: 1
+POS: X = 50 Y = 175 Z = 55
+COLOR: 0xFFFFFF
+ROTATE: X = 90 Y = -90 Z = 0
+REFLEXION: 0%
+SIZE: 1%
+</DEF>
+
+#sphere centrale
+<DEF>
+FORM: SPHERE
+POS: X = 0 Y = 0 Z = 0
+COLOR: 0xFFFFFF
+ROTATE: X = 0 Y = 0 Z = 0
+REFLEXION: 0%
+TRANSPARENCE: 100%
+XPM: 2
+RAYON: 20
+</DEF>
+
+# Etagère murale
+<DEF>
+FORM: PLAN
+POS: X = 50 Y = 200 Z = 50
+H_LIM: X = 50 Y = 0 Z = 0
+B_LIM: X = 0 Y = -50 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+REFLEXION: 0%
+TRANSPARENCE: 0%
+XPM: 4
+</DEF>
+
+<DEF>
+FORM: PLAN
+POS: X = 50 Y = 200 Z = 45
+H_LIM: X = 50 Y = 0 Z = 0
+B_LIM: X = 0 Y = -50 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+REFLEXION: 0%
+TRANSPARENCE: 0%
+XPM: 4
+</DEF>
+
+<DEF>
+FORM: PLAN
+COLOR: 0xFFFFFF
+POS: X = 50 Y = 200 Z = 50
+H_LIM: X = 5 Y = 0 Z = 0
+B_LIM: X = 0 Y = -50 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+REFLEXION: 0%
+TRANSPARENCE: 0%
+XPM: 4
+</DEF>
+
+<DEF>
+FORM: PLAN
+COLOR: 0xFFFFFF
+POS: X = 50 Y = 150 Z = 50
+H_LIM: X = 50 Y = 0 Z = 0
+B_LIM: X = 0 Y = -5 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+REFLEXION: 0%
+TRANSPARENCE: 0%
+XPM: 4
+</DEF>
+
+# Mur devant
+<DEF>
+FORM: PLAN
+POS: X = 100 Y = 200 Z = 100
+H_LIM: X = 200 Y = 0 Z = 0
+B_LIM: X = 0 Y = -400 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+REFLEXION: 0%
+TRANSPARENCE: 0%
+XPM: 1
+</DEF>
+
+# Mur derriere
+
+# Plafond
+<DEF>
+FORM: PLAN
+POS: X = -100 Y = 200 Z = 100
+COLOR: 0xFF0000
+H_LIM: X = 200 Y = 0 Z = 0
+B_LIM: X = 0 Y = -400 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+REFLEXION: 0%
+TRANSPARENCE: 0%
+#XPM: 2
+</DEF>
+
+# Sol
+<DEF>
+FORM: PLAN
+POS: X = -100 Y = 200 Z = -100
+COLOR: 0x00FF00
+H_LIM: X = 200 Y = 0 Z = 0
+B_LIM: X = 0 Y = -400 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+REFLEXION: 0%
+TRANSPARENCE: 0%
+XPM: 3
+</DEF>
+
+# Mur gauche
+<DEF>
+FORM: PLAN
+POS: X = -100 Y = 200 Z = 100
+H_LIM: X = 200 Y = 0 Z = 0
+B_LIM: X = 0 Y = -200 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+REFLEXION: 0%
+TRANSPARENCE: 0%
+XPM: 5
+</DEF>
+
+# Mur droit
+<DEF>
+FORM: PLAN
+POS: X = -100 Y = -200 Z = 100
+H_LIM: X = 200 Y = 0 Z = 0
+B_LIM: X = 0 Y = -200 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+REFLEXION: 0%
+TRANSPARENCE: 0%
+XPM: 5
+</DEF>
+
+<DEF>
+FORM: LIGHT
+POS: X = -90 Y = 0 Z = 90
+COLOR: 0xFFFFFF
+</DEF>
+
+<DEF>
+FORM: VIEW
+ROTATE: X = 0 Y = 0 Z = 0
+POS: X = -700 Y = 0 Z = 0
+</DEF>

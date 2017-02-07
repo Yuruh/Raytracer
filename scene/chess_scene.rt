@@ -1,0 +1,467 @@
+#define		a_a 2
+#define		obj 0 scene/chess/rook.obj
+#define		obj 1 scene/chess/knight.obj
+#define		obj 2 scene/chess/bishop.obj
+#define		obj 3 scene/chess/queen.obj
+#define		obj 4 scene/chess/king.obj
+#define		obj 5 scene/chess/bishop.obj
+#define		obj 6 scene/chess/pawn.obj
+#define         xpm 1 texture/wood_dark.xpm
+#define         xpm 4 texture/wood_dark_flipped.xpm
+#define         xpm 2 texture/sol.xpm
+#define         xpm 3 texture/marble2.xpm
+#define		width 1920
+#define		height 1080
+
+#colonne 1 : Tours
+
+<DEF>
+FORM: 0
+TRANSPARENCE: 0%
+POS: X = -170 Y = 185 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+COLOR: 0xFFFFFF
+FOCUS: 1
+SPECULARITE: 0%
+SIZE: 2500%
+</DEF>
+<DEF>
+FORM: 6
+POS: X = -120 Y = 185 Z = 0
+COLOR: 0xFFFFFF
+SIZE: 2500%
+FOCUS: 1
+TRANSPARENCE: 0%
+SPECULARITE: 0%
+</DEF>
+<DEF>
+FOCUS: 1
+FORM: 0
+SPECULARITE: 0%
+POS: X = 180 Y = 185 Z = 0
+COLOR: 0x222222
+SIZE: 2500%
+TRANSPARENCE: 0%
+</DEF>
+<DEF>
+SPECULARITE: 0%
+FOCUS: 1
+FORM: 6
+POS: X = 130 Y = 185 Z = 0
+COLOR: 0x222222
+SIZE: 2500%
+TRANSPARENCE: 0%
+</DEF>
+
+
+#colonne 2 : Cavaliers
+
+<DEF>
+FOCUS: 1
+FORM: 1
+SPECULARITE: 0%
+TRANSPARENCE: 0%
+POS: X = -170 Y = 135 Z = 0
+COLOR: 0xFFFFFF
+SIZE: 2500%
+</DEF>
+<DEF>
+FOCUS: 1
+FORM: 6
+SPECULARITE: 0%
+POS: X = -120 Y = 135 Z = 0
+COLOR: 0xFFFFFF
+SIZE: 2500%
+TRANSPARENCE: 0%
+</DEF>
+<DEF>
+FOCUS: 1
+FORM: 1
+SPECULARITE: 0%
+POS: X = 170 Y = 110 Z = 0
+COLOR: 0x222222
+ROTATE: X = 0 Y = 0 Z = 180
+SIZE: 2500%
+TRANSPARENCE: 0%
+</DEF>
+<DEF>
+FOCUS: 1
+FORM: 6
+POS: X = 130 Y = 135 Z = 0
+COLOR: 0x222222
+TRANSPARENCE: 0%
+SIZE: 2500%
+SPECULARITE: 0%
+</DEF>
+
+
+#colonne 3 : Fous
+
+<DEF>
+FOCUS: 1
+FORM: 2
+SPECULARITE: 0%
+POS: X = -170 Y = 85 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+COLOR: 0xFFFFFF
+SIZE: 2500%
+TRANSPARENCE: 0%
+</DEF>
+<DEF>
+FOCUS: 1
+FORM: 2
+SPECULARITE: 0%
+POS: X = 180 Y = 85 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+COLOR: 0x222222
+SIZE: 2500%
+TRANSPARENCE: 0%
+</DEF>
+<DEF>
+FOCUS: 1
+SPECULARITE: 0%
+FORM: 6
+POS: X = -120 Y = 85 Z = 0
+COLOR: 0xFFFFFF
+SIZE: 2500%
+TRANSPARENCE: 0%
+</DEF>
+<DEF>
+FOCUS: 1
+TRANSPARENCE: 0%
+SPECULARITE: 0%
+FORM: 6
+POS: X = 130 Y = 85 Z = 0
+COLOR: 0x222222
+SIZE: 2500%
+</DEF>
+
+
+#colonne 4 : Reines
+
+<DEF>
+FOCUS: 1
+FORM: 3
+POS: X = -170 Y = 35 Z = 0
+COLOR: 0xFFFFFF
+SPECULARITE: 0%
+SIZE: 2500%
+TRANSPARENCE: 0%
+</DEF>
+<DEF>
+FOCUS: 1
+FORM: 3
+POS: X = 180 Y = 35 Z = 0
+COLOR: 0x222222
+SPECULARITE: 0%
+SIZE: 2500%
+TRANSPARENCE: 0%
+</DEF>
+<DEF>
+FOCUS: 1
+FORM: 6
+SPECULARITE: 0%
+POS: X = -120 Y = 35 Z = 0
+COLOR: 0xFFFFFF
+SIZE: 2500%
+TRANSPARENCE: 0%
+</DEF>
+<DEF>
+FOCUS: 1
+FORM: 6
+SPECULARITE: 0%
+POS: X = 130 Y = 35 Z = 0
+COLOR: 0x222222
+SIZE: 2500%
+TRANSPARENCE: 0%
+</DEF>
+
+
+#colonne 5 : Rois
+
+<DEF>
+FOCUS: 1
+FORM: 4
+TRANSPARENCE: 0%
+SPECULARITE: 0%
+POS: X = 180 Y = -15 Z = 0
+COLOR: 0x222222
+SIZE: 2500%
+</DEF>
+<DEF>
+FOCUS: 1
+FORM: 4
+SPECULARITE: 0%
+POS: X = -170 Y = -15 Z = 0
+COLOR: 0xFFFFFF
+SIZE: 2500%
+TRANSPARENCE: 0%
+</DEF>
+<DEF>
+FOCUS: 1
+FORM: 6
+SPECULARITE: 0%
+POS: X = -120 Y = -15 Z = 0
+COLOR: 0xFFFFFF
+TRANSPARENCE: 0%
+SIZE: 2500%
+</DEF>
+<DEF>
+FOCUS: 1
+FORM: 6
+SPECULARITE: 0%
+POS: X = 130 Y = -15 Z = 0
+COLOR: 0x222222
+TRANSPARENCE: 0%
+SIZE: 2500%
+</DEF>
+
+
+#colonne 6 : Fous
+
+<DEF>
+FOCUS: 1
+TRANSPARENCE: 0%
+SPECULARITE: 0%
+FORM: 2
+POS: X = -170 Y = -65 Z = 0
+COLOR: 0xFFFFFF
+SIZE: 2500%
+</DEF>
+<DEF>
+FOCUS: 1
+SPECULARITE: 0%
+FORM: 2
+TRANSPARENCE: 0%
+POS: X = 180 Y = -65 Z = 0
+COLOR: 0x222222
+SIZE: 2500%
+</DEF>
+<DEF>
+FOCUS: 1
+FORM: 6
+POS: X = -120 Y = -65 Z = 0
+COLOR: 0xFFFFFF
+TRANSPARENCE: 0%
+SIZE: 2500%
+SPECULARITE: 0%
+</DEF>
+<DEF>
+FOCUS: 1
+SPECULARITE: 0%
+FORM: 6
+POS: X = 130 Y = -65 Z = 0
+COLOR: 0x222222
+TRANSPARENCE: 0%
+SIZE: 2500%
+</DEF>
+
+
+#colonne 7 : Cavaliers
+
+<DEF>
+FOCUS: 1
+FORM: 1
+TRANSPARENCE: 0%
+POS: X = -170 Y = -115 Z = 0
+COLOR: 0xFFFFFF
+SPECULARITE: 0%
+SIZE: 2500%
+</DEF>
+<DEF>
+SPECULARITE: 0%
+FOCUS: 1
+FORM: 1
+TRANSPARENCE: 0%
+POS: X = 170 Y = -140 Z = 0
+ROTATE: X = 0 Y = 0 Z = 180
+COLOR: 0x222222
+SIZE: 2500%
+</DEF>
+<DEF>
+FOCUS: 1
+FORM: 6
+SPECULARITE: 0%
+POS: X = -120 Y = -115 Z = 0
+COLOR: 0xFFFFFF
+TRANSPARENCE: 0%
+SIZE: 2500%
+</DEF>
+<DEF>
+FOCUS: 1
+FORM: 6
+SPECULARITE: 0%
+POS: X = 130 Y = -115 Z = 0
+COLOR: 0x222222
+SIZE: 2500%
+TRANSPARENCE: 0%
+</DEF>
+
+
+#colonne 8 : Tours
+
+<DEF>
+FOCUS: 1
+FORM: 0
+SPECULARITE: 0%
+POS: X = -170 Y = -165 Z = 0
+COLOR: 0xFFFFFF
+SIZE: 2500%
+TRANSPARENCE: 0%
+</DEF>
+<DEF>
+FOCUS: 1
+TRANSPARENCE: 0%
+FORM: 0
+POS: X = 180 Y = -165 Z = 0
+COLOR: 0x222222
+SPECULARITE: 0%
+SIZE: 2500%
+</DEF>
+<DEF>
+TRANSPARENCE: 0%
+FOCUS: 1
+SPECULARITE: 0%
+FORM: 6
+POS: X = -120 Y = -165 Z = 0
+COLOR: 0xFFFFFF
+SIZE: 2500%
+</DEF>
+<DEF>
+SPECULARITE: 0%
+FOCUS: 1
+FORM: 6
+POS: X = 130 Y = -165 Z = 0
+COLOR: 0x222222
+SIZE: 2500%
+TRANSPARENCE: 0%
+</DEF>
+
+
+#damier
+
+<DEF>
+FORM: PLAN
+POS: X = -200 Y = -200 Z = 0
+H_LIM: X = 0 Y = 400 Z = 0
+B_LIM: X = 400 Y = 0 Z = 0
+BRILLANCE: 0%
+REFLEXION: 70%
+DAMIER: 0xFFFFFF
+COLOR: 0x000000
+FOCUS: 1
+</DEF>
+
+
+#4 faces latérales
+<DEF>
+FORM: PLAN
+POS: X = -200 Y = -200 Z = 0
+H_LIM: X = 0 Y = 400 Z = 0
+B_LIM: X = 100 Y = 0 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+COLOR: 0x000000
+XPM: 3
+</DEF>
+<DEF>
+FORM: PLAN
+POS: X = 200 Y = -200 Z = 0
+H_LIM: X = 0 Y = 400 Z = 0
+B_LIM: X = 100 Y = 0 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+COLOR: 0x000000
+FOCUS: 1
+XPM: 3
+</DEF>
+<DEF>
+FORM: PLAN
+POS: X = -200 Y = -200 Z = 0
+H_LIM: X = 0 Y  = 100 Z = 0
+B_LIM: X = 400 Y = 0 Z = 0
+ROTATE: X = -90 Y = 0 Z = 0
+COLOR: 0x000000
+FOCUS: 1
+XPM: 3
+</DEF>
+<DEF>
+FORM: PLAN
+POS: X = -200 Y = 200 Z = 0
+H_LIM: X = 0 Y  = 100 Z = 0
+B_LIM: X = 400 Y = 0 Z = 0
+ROTATE: X = -90 Y = 0 Z = 0
+COLOR: 0x000000
+FOCUS: 1
+XPM: 3
+</DEF>
+
+
+
+
+<DEF>
+FORM: PLAN
+POS: X = -500 Y = 500 Z = -100
+COLOR: 0xCCCCCC
+H_LIM: X = 1000 Y = 0 Z = 0
+B_LIM: X = 0 Y = -1000 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+FOCUS: 0
+XPM: 2
+</DEF>
+
+<DEF>
+FORM: PLAN
+POS: X = -500 Y = 500 Z = 300
+COLOR: 0xCCCCCC
+H_LIM: X = 1000 Y = 0 Z = 0
+B_LIM: X = 0 Y = -1000 Z = 0
+ROTATE: X = 0 Y = 0 Z = 0
+FOCUS: 0
+XPM: 1
+REFLEXION: 0%
+</DEF>
+<DEF>
+FORM: PLAN
+POS: X = -500 Y = 500 Z = 300
+COLOR: 0xCCCCCC
+H_LIM: X = 1000 Y = 0 Z = 0
+B_LIM: X = 0 Y = -1000 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+FOCUS: 0
+XPM: 1
+REFLEXION: 0%
+</DEF>
+<DEF>
+FORM: PLAN
+POS: X = -500 Y = -500 Z = 300
+COLOR: 0xCCCCCC
+FOCUS: 0
+H_LIM: X = 1000 Y = 0 Z = 0
+B_LIM: X = 0 Y = -1000 Z = 0
+ROTATE: X = 90 Y = 0 Z = 0
+REFLEXION: 0%
+XPM: 1
+</DEF>
+
+<DEF>
+FORM: PLAN
+POS: X = 500 Y = 500 Z = 500
+COLOR: 0xCCCCCC
+FOCUS: 0
+H_LIM: X = 1000 Y = 0 Z = 0
+B_LIM: X = 0 Y = -1000 Z = 0
+ROTATE: X = 0 Y = 90 Z = 0
+REFLEXION: 0%
+XPM: 4
+</DEF>
+
+<DEF>
+FORM: LIGHT
+POS: X = -300 Y = 0 Z = 200
+COLOR: 0xFFFFFF
+</DEF>
+
+<DEF>
+FORM: VIEW
+ROTATE: X = 0 Y = 22 Z = 22
+POS: X = -600 Y = -280 Z = 280
+</DEF>

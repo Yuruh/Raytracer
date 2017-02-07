@@ -1,0 +1,33 @@
+#define         obj 1 scene/papillon.obj
+#define		width 800
+#define		height 800
+#define			a_a 1
+
+<DEF>
+FORM: VIEW
+POS: X = 0 Y = 25 Z = 60
+ROTATE: X = 0 Y = 0 Z = 0
+</DEF>
+
+<DEF>
+FORM: LIGHT
+POS: X = 125 Y = 25 Z = 55
+COLOR: 0xFF0000
+</DEF>
+
+<DEF>
+FORM: PLAN
+POS: X = 1000 Y = -1000 Z = 1000
+ROTATE: X = 0 Y = 90 Z = 0
+H_LIM: X = 2000 Y = 0 Z = 0
+B_LIM: X = 0 Y = 2000 Z = 0
+COLOR: 0x0000FF
+</DEF>
+
+<DEF>
+FORM: 1
+POS: X = 120 Y = -20 Z = 40
+ROTATE: X = 0 Y = 0 Z = 10
+SIZE: 50%
+COLOR: 0xFFCC33
+</DEF>

@@ -1,0 +1,58 @@
+#define		a_a 1
+#define		obj 0 scene/chess.obj
+
+<DEF>
+FORM: 0
+POS: X = 0 Y = 0 Z = 0
+ROTATE: X = 45 Y = 45 Z = 45
+SIZE: 3000%
+REFLEXION: 70%
+</DEF>
+
+<DEF>
+FORM: SPHERE
+POS: X = 100 Y = 80 Z = 0
+H_LIM: X = 100 Y = 100 Z = 10
+B_LIM: X = -100 Y = -100 Z = -10
+ROTATE: X = 1 Y = 0 Z = 0
+RAYON: 20
+BRILLANCE: 50%
+</DEF>
+
+<DEF>
+FORM: SPHERE
+POS: X = 100 Y = -80 Z = 0
+H_LIM: X = 100 Y = 100 Z = 10
+B_LIM: X = -100 Y = -100 Z = -10
+ROTATE: X = -1 Y = 0 Z = 0
+RAYON: 20
+BRILLANCE: 10%
+</DEF>
+
+<DEF>
+FORM: PLAN
+POS: X = 0 Y = -100 Z = -50
+ROTATE: X = 0 Y = 0 Z = 0
+H_LIM: X = 200 Y = 0 Z = 0
+B_LIM: X = 0 Y = 200 Z = 0
+COLOR: 0xFF0000
+DAMIER: 0x00FF00
+</DEF>
+
+<DEF>
+FORM: LIGHT
+POS: X = 0 Y = 0 Z = 200
+COLOR: 0x0000FF
+</DEF>
+
+<DEF>
+FORM: LIGHT
+POS: X = 0 Y = 0 Z = -200
+COLOR: 0xFF0000
+</DEF>
+
+<DEF>
+FORM: VIEW
+ROTATE: X = 0 Y = 0 Z = 0
+POS: X = -200 Y = 0 Z = 0
+</DEF>
